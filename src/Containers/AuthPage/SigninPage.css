@@ -1,0 +1,40 @@
+.login {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    margin: 3rem auto;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.login-by-gg {
+    width: 35%;
+    height: 60px;
+    background-color: #cc3e2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+.gg-icon {
+    height: 80%;
+    float: left;
+    border-right: 1px solid black;
+    padding-left: 2%;
+    padding-right: 1rem;
+    margin-top: 5px;
+}
+
+.login-by-gg-content {
+    margin-top: 12px;
+    font-weight: bold;
+}

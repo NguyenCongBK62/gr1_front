@@ -1,0 +1,9 @@
+.landing-content {
+    height: 100%;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.landing-content-title {
+    font-size: 30px;
+}

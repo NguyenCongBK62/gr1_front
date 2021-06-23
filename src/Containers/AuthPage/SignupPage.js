@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import './SigninPage.css';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button } from 'antd';
 import GoogleLogin from 'react-google-login';
 import {Redirect, Link} from 'react-router-dom';
 
@@ -148,7 +148,7 @@ class SignupPage extends Component {
                         </Button>
                     </Form.Item>
                 </Form>
-                <div>You had account? go to <Link to='/signin'>SignIn</Link></div>
+                <div>You had account? go to <Link to='/signin'>Sign In</Link></div>
             </div>
             
         );

@@ -2,14 +2,20 @@ import { Row, Col, Tag } from 'antd';
 import React from 'react';
 import './CardJob.css';
 import {DollarCircleOutlined} from '@ant-design/icons';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectJob } from '../../actions/job';
 
 const CardJob = (props) => {
+
+    const selectedJob = useSelector(state => state.job.selectedJob);
+    const dispatch = useDispatch();
     
     const handleClick = () => {
-        props.setSelectCard(props.job.id)
+        dispatch(selectJob(props.job));
     }
+
     return (
-        <Row className={ props.selectCard === props.job.id ? 'job-clicked' : 'job'} onClick={handleClick}>
+        <Row className={ selectedJob.id === props.job.id ? 'job-clicked' : 'job'} onClick={handleClick}>
             <Col span={5} style={{textAlign: 'center'}}>
                 <img src={props.job.imageLink}></img>
             </Col>

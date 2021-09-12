@@ -3,7 +3,7 @@ import React from 'react';
 import './CardJob.css';
 import {DollarCircleOutlined} from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectJob } from '../../actions/job';
+import { selectJob } from '../../redux/job';
 
 const CardJob = (props) => {
 

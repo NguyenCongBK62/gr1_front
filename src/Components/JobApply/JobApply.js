@@ -3,10 +3,10 @@ import "./JobApply.css";
 
 const JobApply = (props) => {
   const [imageURL, setImageURL] = useState();
-  const handleFileUpload = (e) => {
+  const handleFileUpload = async (e) => {
     const uploadData = new FormData();
     uploadData.append("file", e.target.files[0], "file");
-    fetch("http://localhost:3001/admin/cloudinary-upload", {
+    await fetch("http://localhost:3001/admin/cloudinary-upload", {
       method: "post",
       body: uploadData,
     })

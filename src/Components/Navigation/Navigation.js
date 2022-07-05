@@ -84,7 +84,11 @@ const Navigation = (props) => {
             </a>
           </Dropdown>
         </Menu.Item>
-        <Menu.Item id="header-item-right">Nhà tuyển dụng</Menu.Item>
+        <Menu.Item id="header-item-right">
+          <a href="http://localhost:8888/login" style={{ color: "white" }}>
+            Nhà tuyển dụng
+          </a>
+        </Menu.Item>
         <Menu.Item id="switch">
           <Switch
             checkedChildren="VI"
